@@ -4,10 +4,10 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return "we fucking did it!"
+    return "we did it!"
 
 @app.route("/autocomp")
 def autocomp():
-    return  "some fuckiong json here"
+    return  "some json here"
 
 app.run(debug=True)
