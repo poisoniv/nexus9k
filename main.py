@@ -6,8 +6,8 @@ app = Flask(__name__)
 def index():
     return "we did it!"
 
-@app.route("/autocomp")
-def autocomp():
+@app.route("/functions")
+def functions():
     return  "some json here"
 
 app.run(debug=True)
