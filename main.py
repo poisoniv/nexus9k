@@ -4,11 +4,16 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return "we did it!"
+    return render_template("index.html")
 
-@app.route("/functions")
-def functions():
-    return  "some json here"
+### This is the part I'm not sure about...
+#@app.route("/meraki")
+#def index():
+#    return render_template("index.html")
+
+#@app.route("/functions")
+#def functions():
+#    return  "some json here"
 
 if __name__ == "__main__":
     app.run(debug=True)
