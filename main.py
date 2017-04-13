@@ -6,10 +6,13 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
-### This is the part I'm not sure about...
-#@app.route("/meraki")
-#def index():
-#    return render_template("index.html")
+@app.route("/meraki")
+def meraki():
+    return render_template("meraki.html")
+
+@app.route("/n9k")
+def n9k():
+    return render_template("nexus9k.html")
 
 #@app.route("/functions")
 #def functions():
