@@ -14,6 +14,7 @@ orgurl = 'https://dashboard.meraki.com/api/v0/organizations/'
 headers = {'X-Cisco-Meraki-API-Key': api_key,'Content-Type': 'application/json'}
 
 orgsjson = requests.get(orgurl, headers=headers)
+orgsjson.json()
 
 print(orgsjson)
 output = json.loads(orgsjson.text)
